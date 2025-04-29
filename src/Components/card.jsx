@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 const Card = ({data, referance}) => {
   return (
     <>
-    <motion.div drag dragConstraints = {referance} whileDrag={{scale:1.1}} dragMomentum className="relative w-50 h-60 bg-zinc-900 rounded-4xl px-6 py-8 overflow-hidden">
+    <motion.div drag dragConstraints = {referance} whileDrag={{scale:1.1}} dragMomentum className="relative min-w-40 md:min-w-50 h-60 bg-zinc-900 rounded-4xl px-6 py-8 overflow-hidden">
         <FaRegFileAlt className='text-zinc-300'/>
         <p className='text-zinc-300 leading-none text-sm mt-4'>{data.description}</p>
         <div className='absolute bottom-0 left-0 text-zinc-300 w-full'>

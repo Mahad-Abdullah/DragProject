@@ -38,7 +38,7 @@ const Foreground = () => {
 ];
 
   return (
-    <div ref={ref} className=' relative w-full h-screen z-50 p-5 flex flex-row gap-10'>
+    <div ref={ref} className=' relative w-full flex-wrap h-screen z-50 p-5 flex flex-row gap-10'>
       {data.map((item, index) => (
       <Card data = {item} referance = {ref}/>
     ))}
